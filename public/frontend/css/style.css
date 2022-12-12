@@ -1,0 +1,1511 @@
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header, #mobile__header{
+    padding: 20px;
+}
+
+.menu-fixed{
+    padding: 30px 20px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4);
+    z-index: 999;
+}
+
+
+.Header__top__searchbar a, .mobile__Header__top__searchbar a {
+    color: #000;
+}
+
+/* =====================all fa-brand start here================ */
+.sub-sidebar-social ul li a, .Header__top__icon a, .column4 ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Header__top__icon a{
+    margin-left: 15px;
+}
+
+.column4 ul li a{
+    color: #fff;
+}
+
+
+
+.fa-brands:hover{
+    -webkit-transition: all 0.9s;
+    transform: rotate(360deg);
+}
+
+.fa-facebook-f:hover, .fa-facebook:hover{
+    color: #1877F2;
+}
+
+.fa-twitter:hover, .fa-twitter-square:hover{
+    color: #1DA1F2;
+}
+
+.fa-youtube-square:hover{
+    color: #CD201F;
+}
+
+.fa-linkedin:hover{
+    color :#0A66C2;
+}
+
+.Header__top__searchbar i.fa-solid.fa-align-justify {
+    font-size: 20px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+.Header__top__searchbar i.fa-solid.fa-magnifying-glass {
+    font-size: 20px;
+}
+
+/* =========================
+    all fa-brand end here 
+========================== */
+
+
+
+
+/* modal start here */
+
+.modal-content{
+    padding-left: 100px;
+}
+
+.modal-body form input {
+    padding: 350px 10px !important;
+    width: 100% !important;
+    border: none;
+    outline: none;
+}
+
+.modal-body form input.search {
+    font-size: 45px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+/* modal end here */
+
+ 
+
+/* =================
+sidebar start here
+================ */
+ 
+.sub-sidebar-one{
+    margin-bottom: 40px;
+}
+
+.sub-sidebar-two {
+    padding: 26px;
+    background-color: #f4f4f4;
+    margin-bottom: 40px;
+}
+
+.slidebar-aboutme {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slidebar-aboutme h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.sub-sidebar-one .sidebar-readmore {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+div#sidebar .sidebar-readmore a{
+    text-decoration: none;
+    color: #333;
+}
+div#sidebar .sidebar-readmore a:hover{
+    color: #000;
+}
+
+.sidebar-para {
+    text-align: center;
+    font-size: 14px;
+}
+
+.sidebar-para p {
+    line-height: 22px;
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+.slidebar-image a img {
+    width: 100%;
+}
+
+
+.sub-sidebar-follow {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px 0px 15px 0px;
+}
+
+.sub-sidebar-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-sidebar-social ul li {
+    list-style: none;
+}
+
+/* ===============
+    sidebar work adding new 05/03/22 start 
+================= */
+
+.sub-sidebar-subscribe {
+    padding: 50px 40px 65px;
+    background-color: #f4f4f4;
+    margin-bottom: 40px;
+}
+
+.sidebar-post {
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-post-para-section {
+    max-width: 200px;
+}
+
+.sidebar-newsletter p.sletter {
+    padding-bottom: 30px;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.sidebar-newsletter p.fill-mail {
+    color: grey;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+
+.sidebar-newsletter form {
+    padding: 10px 0;
+}
+
+.sidebar-newsletter form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.sidebar-newsletter form .form_btn {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0 !important;
+}
+            /* ------- */
+
+.sidebar-popularpost-section p.popular-post-title, .recent-post-section p.recent-post-title, .categorie-title p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 35px;
+    
+}
+
+.sidebar-post img {
+    max-height: 80px;
+    border-radius: 100%;
+}
+
+.sidebar-post p.post-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.sidebar-post p.post-details {
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+}
+  
+            /* ------- */
+
+.sub-sidebar-banner img {
+    width: 100%;
+}
+
+.sub-sidebar-banner {
+    padding-bottom: 40px;
+}
+
+            /* ------- */
+
+.category-section .category-list ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 6px 0px 6px 10px;
+    background-color: #f4f4f4;
+    max-width: 100%;
+    font-weight: 500;
+    display: block;
+}
+
+.category-section .category-list ul li {
+    margin-bottom: 10px;
+    list-style: circle;
+}
+            /* ------- */       
+
+.recent-post-desc img {
+    max-width: 100%;
+}
+
+.recent-post-title p {
+    font-size: 17px;
+    font-weight: 500;
+    color: gray;
+}
+
+.recent-post-desc p.trending {
+    color: orange;
+    font-weight: 500;
+}
+
+
+.recent-post-desc {
+    padding-bottom: 30px;
+}
+                  
+/* ==============
+    sidebar work adding new s 05/03/22 end
+================= */
+
+/* ====================
+    side bar end here
+=====================*/
+
+
+/* slide copy */
+
+ 
+/* =============================== 
+    Banner section css start here 
+================================= */
+
+.banner_section {
+    max-height: 600px;
+    margin-bottom: 50px;
+}
+.slide-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .slide-image{
+    max-height: 600px;
+    max-width: 100%;
+    z-index: 50;
+  }
+
+  .slide-content{
+      position: absolute;
+      top: 50%;
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      background-color: #f9f9f9;
+      opacity: 0.9;
+      padding: 30px 20px;
+      max-width: 500px;
+  }
+
+.slide-content a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.slide-content .a1{
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    text-decoration: none;
+    color: #333;
+}
+
+.slide-content .a2{
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+
+.slide-content .a3{
+    color: #333;
+}
+
+.slide-content a:hover{
+    color: #888;
+}
+
+.slide-content p{
+    font-size: 14px;
+}
+  
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    font-size: 19px;
+}
+
+.swiper-button-next {
+    background: #fff;
+    width: 45px;
+    height: 48px;
+    color: #000;
+
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: 'prev';
+    font-size: 19px;
+}
+
+.swiper-button-prev {
+    background: #fff;
+    width: 45px;
+    height: 48px;
+    color: #000;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+/* =========================  
+        slide copy
+=========================== */
+/* =================header section start================ */
+.fixedHeader__top{
+    margin-bottom: 30px;
+}
+
+
+.Header__top__logo a, .mobile__Header__top__logo a {
+    color: #333;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 48px;
+}
+/* menu ber here */
+.fixedHeader__bottom > ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.fixedHeader__bottom > ul > li {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.fixedHeader__bottom >ul >li::after{
+    content: "-";
+    left: 10px;
+    top: 10px;
+    margin: 0 10px;
+}
+
+.fixedHeader__bottom >ul >li:last-child::after{
+    content: "";
+    left: 0;
+    top: 0;
+}
+
+.fixedHeader__bottom ul > li > a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+
+.fixedHeader__bottom > ul > li{
+    list-style: none;
+    position: relative;
+}
+
+.fixedHeader__bottom ul > li > ul {
+    left: 0;
+    top: 50px;
+    width: 245px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px 25px 25px;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4);
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.fixedHeader__bottom ul > li > a.active{
+    font-weight: bold;
+}
+
+.fixedHeader__bottom > ul > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.fixedHeader__bottom ul > li > ul > li {
+    list-style: none;
+    text-decoration: none;
+    text-align: start;
+    padding-bottom: 15px;
+}
+
+.fixedHeader__bottom ul > li > ul > li a:hover{
+    color: #000;
+}
+
+.fixedHeader__bottom ul > li > ul > li a{
+    font-size: 16px;
+}
+
+.fixedHeader__bottom ul > li > ul > li:last-child{
+    padding-bottom: 0;
+}
+.bolg_main_area {
+    margin-top: 30px;
+}
+
+
+.Header__top__icon a:first-child {
+    margin-left: 0;
+}
+
+.Header__top__icon a i .fas{
+    height: 20px;
+    width: 20px;
+}
+
+.Header__top__logo p {
+    font-size: 14px;
+}
+
+
+/* =============================== */
+#mobile__header {
+    display: none;
+}
+/* =============header section end here========= */
+
+/* =============mobile header section start here====== */
+.mobile__Header__top__searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile__Header__top__searchbar a .fa-solid{
+    font-size: 20px;
+}
+
+/* -----mobile menu start----- */
+
+
+.mobile__Header__top__logo{
+    text-align: center;
+}
+
+.mobile__menu {
+    background-color: #000000;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    top: 133px;
+    left: 0;
+    z-index: 999;
+    transform: scaleX(0);
+    transition: all 0.3s;
+    transform-origin: left;
+}
+
+.mobile__menu ul li ul {
+    display: none;
+}
+
+ 
+
+.open{
+    transform: scaleX(1);
+}
+
+.mobile__menu > ul {
+    padding: 25px;
+    margin: 0;
+}
+
+.mobile__menu > ul > li {
+    list-style: none;
+    padding: 16px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.mobile__menu > ul > li > ul > li{
+    padding: 10px 0;
+}
+
+.mobile__menu ul li a{
+    display: block;
+}
+
+.mobile__menu ul li:last-child{
+    border-bottom: none;
+}
+
+.mobile__menu a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 20px;
+    width: 100%;
+}
+
+.down__arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down__arrow i.fa-solid.fa-angle-down {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+i.fa-solid.fa-angle-down.rotate {
+    transform: rotate(180deg);
+}
+/* -----mobile menu end----- */
+
+/* ============mobile header section end here======== */
+
+
+/* ========================
+    swiper slider end here 
+===========================*/
+
+
+/* copy to */
+.fixedHeader__top{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebarWrap.sticky {
+    position:fixed;
+    top:5px;
+}
+   
+.clear {
+    clear:both;
+}
+
+/* ======================
+    blog__poststart here
+===================== */
+.blog__post__grid {
+    margin-top: 45px;
+}
+
+.blog__post__item {
+    padding: 22px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);
+}
+
+.blog__post__item:last-child{
+    margin-bottom: 0;
+}
+
+.blog-post-image{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-post-image img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.blog-post-image img:hover{
+    -webkit-transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+.blog-inspiration {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.blog-inspiration a {
+    text-decoration: none;
+    color: grey;
+}
+
+.blog-title {
+    text-align: center;
+}
+
+.blog-title a{
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+
+.blog-info{
+    margin:15px 0px 20px;
+}
+
+.blog-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.blog-info ul li {
+    list-style: none;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+}
+
+.blog-info ul li a {
+    color: grey;
+}
+
+.blog-paragraph {
+    margin: 30px 0px 20px;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: grey;
+}
+.blog-post-wraper-bottom a, .blog-post-wraper-top a{
+    transition: 0.3s;
+    text-decoration: none;
+} 
+
+.blog-post-wraper-bottom {
+    text-align: center;
+}
+
+.blog-post-wraper-bottom a {
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.blog__post__grid a:hover{
+    color: #000;
+}
+/*=========================
+    blog__post end here
+============================= */
+
+
+
+/* ===========================
+    pagination section  start here
+=============================== */
+.pagination__section__inner ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination__section{
+    margin: 70px 0;
+}
+
+.pagination__section__inner ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.pagination__section__inner ul li a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 5px 5px rgb(156 156 156 / 10%);
+    /* padding: 0px 10px; */
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.4s;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.pagination__section__inner ul li:last-child a{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.pagination__section__inner ul li a:hover{
+    background-color: orange;
+}
+
+.pagination__section__inner ul li:last-child:hover a{
+    background-color: transparent;
+}
+/* ==========================
+    pagination section  end here
+============================= */
+
+/* =======================
+    footer start here 
+==========================*/   
+#footer { 
+    background:#000; 
+    clear: both;
+} 
+
+.foot{
+    color: #fff;
+}
+
+.footer-title h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0px 30px 0px;
+}
+
+.footer-page-content {
+      margin: 40px 15px; 
+}
+
+.footer-para {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-phone span {
+    margin: 16px 0px;
+    display: block;
+}
+
+.footer-email p {
+    font-size: 16px;
+}
+
+
+.footer-email p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list ul li {
+    list-style: none;
+    padding: 0px 0px 10px 0px;
+}
+
+.footer-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.sub-footer-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sub-footer-list ul .sps {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.sub-footer-list ul li {
+    list-style: none;
+}
+
+.sub-footer-list ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.footer-foot {
+    padding: 40px 15px;
+    border-top: 1px solid #fff;
+}
+
+.column8{
+    font-size: 15px;
+}
+
+.column4 ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.column4 ul li {
+    list-style: none;
+    padding-right: 18px;
+}
+
+.column4 ul li:last-child{
+    padding-right: 0;
+}
+/*=========================
+    footer end here 
+ ==============================*/
+
+
+
+/* ===============================================
+    Category list full section start here---page
+==================================================*/
+.life__style__category__inner h3 {
+    font-size: 28px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);
+}
+
+.category__grid__img img {
+    width: 100%;
+}
+
+.category__grid__desc {
+    margin-top: 60px;
+}
+
+.category__grid__desc .category__info ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category__grid__desc .category__info ul li {
+    list-style: none;
+}
+
+.category__grid__desc .category__info ul li, .category__info ul li a {
+    text-decoration: none;
+    color: #999;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+
+.category__details .h4 {
+    font-size: 22px;
+    color: #000;
+    margin: 15px 0;
+    display: block;
+}
+
+.category__details p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.category__details {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999;
+}
+
+.category__details a.readmore, .category__details a.h4{
+    text-decoration: none;
+}
+
+.category__details a.readmore {
+    color: #555;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.category__grid__section__inner {
+    padding: 35px;
+    margin: 35px 0;
+    background-color: #fff;
+    box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);
+}
+/* ===============================================
+    Category list full section start here---page
+==================================================*/
+
+
+/* ===============================================
+    single post section start here---page
+==================================================*/
+:root{
+    --pPadding:50px 0px;
+}
+
+
+.single__post__section__inner .img img {
+    max-width: 100%;
+}
+
+.single__post__section__inner {
+    padding: 30px 90px;
+}
+
+.single__post__section__inner .para p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #3f3f3f;
+    font-weight: 400;
+    text-align: justify;
+    padding-top: 30px
+}
+
+/* .single__post__section__inner .para p:nth-child(1){
+    padding-top: 0;
+} */
+
+
+.single__post__section .blog-title a {
+    font-size: 30px;
+    color: #3f3f3f;
+    text-align: justify;
+}
+
+.social__sector .tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.social__sector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.social__sector .tags ul li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.social__sector .tags ul li a, .social__sector .tags ul li {
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.socials ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.socials ul li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.socials ul li a, .socials ul li {
+    color: #333;
+}
+
+img.author__img {
+    width: 100%;
+}
+
+.author__section {
+    padding: var(--pPadding);
+    border-bottom: 1px solid #eee;
+}
+
+.author__written__content ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.author__written__content ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.author__written__content ul li a {
+    font-size: 22px;
+    color: #333;
+}
+
+.author__written__content h4 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.author__written__content p {
+    margin: 18px 0px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
+.prev__next__post {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: var(--pPadding);
+    border-bottom: 1px solid #eee;
+}
+
+.prev__post p, .next__post p {
+    margin: 17px 0;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.prev__post h5, .next__post h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.blog__three__post {
+    border-bottom: 1px solid #eee;
+}
+
+.blog__three__post img {
+    max-width: 100%;
+}
+
+.blog__three__post {
+    padding: var(--pPadding);
+}
+
+.blog__three__post .title {
+    font-size: 16px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+.blog__three__post .title p{
+    margin: 0;
+    font-weight: 500;
+}
+
+.blog__three__post .dates {
+    font-size: 12px;
+    letter-spacing: 0.2px;
+}
+
+.blog__three__post .title, .blog__three__post .dates {
+    text-align: center;
+    margin: 0;
+}
+
+.single__post__comment__section__comments {
+    padding: var(--pPadding);
+    border-bottom: 1px solid #eee;
+}
+
+
+.comment__owner__profile img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.comment__owner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment__owner__detail a, .comment__owner__reply a {
+    text-decoration: none;
+    color: #222;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.comment__owner__detail p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.comment__content p {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 20px 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.single__post__comment__section{
+    padding: var(--pPadding);
+}
+
+.single__post__comment__section>p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comments__common {
+    margin-bottom: 25px;
+}
+.comments__common:last-child{
+    margin-bottom: 0;
+}
+
+.comments__common.take__margin__left {
+    margin-left: 100px;
+}
+
+
+textarea#comment__box {
+    width: 100%;
+    height: 130px;
+    border: 1px solid #eee;
+    outline: none;
+}
+
+.post__title p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.single__post__comment__section form label {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.single__post__comment__section form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #eee;
+    outline: none;
+}
+
+.single__post__comment__section form a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+    max-width: 180px;
+}
+/* ===============================================
+    single post section end here---page
+==================================================*/
+
+
+/* ===============================================
+    about section start here
+==================================================*/
+.about__image img {
+    width: 100%;
+}
+
+.about__section__inner {box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);}
+
+.about__script {
+    padding: 65px 100px;
+}
+
+.about__script title {
+    text-align: justify;
+}
+
+.about__script .title {
+    text-align: justify;
+}
+
+.about__script .title h3 {
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.about__script .title p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.about__share {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.about__share share p {
+    font-size: 20px;
+}
+
+.about__share .share p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about__script .title h3 {
+    padding-bottom: 30px;
+}
+
+
+.single__post__comment__section__inner .post__title {
+    text-align: justify;
+}
+/* ===============================================
+    about section end here
+==================================================*/
+
+
+
+/* ==============================================================contact page start here========================================= */
+.map__section iframe{
+    width:100%; 
+    height:650px;
+}
+
+.single__post__comment__section__inner {
+    padding: 0 100px;
+}
+/* ==============================================================contact page start here========================================= */
+
+
+/* =========================================
+            error page start here
+============================================*/
+.Header__top__logo a {
+    text-decoration: none;
+    font-size: 48px;
+    color: #000;
+}
+
+.error-section-inner {
+    text-align: center;
+}
+
+.error-title h1 {
+    font-size: 37px;
+    padding: 50px 0px 10px;
+}
+
+.error-section {
+    padding: 50px 50px 60px 50px;
+    margin: 100px 0;
+    box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);
+}
+
+.fixedHeader__bottom ul > li > a.active{
+    font-weight: bold;
+}
+
+.error-content {
+    width: 65%;
+    margin: auto;
+    text-align: left;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.error-content p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+}
+
+.error-search form input[type="text"]{
+    width: 50% !important;
+}
+
+
+form button {
+    width: 10%;
+    background-color: #000;
+    color: #ffff;
+    border: none;
+    padding: 7px;
+    margin-left: -4px;
+}
+
+.error-content p {
+    text-align: justify;
+}
+/* =========================================
+            error page end here
+============================================*/
+
+/* -------------------------------------------------------------- */
+
+
+/* =========================================
+        homestyle page start here
+============================================*/
+.bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .inner-section-one {
+    text-align: left;
+} */
+
+.itemssss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-section-two {
+    display: inline-flex;
+    align-items: center;
+}
+
+.inner-section-two p {
+    padding: 0;
+    margin: 0;
+}
+
+.inner-section-two ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.inner-section-two ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.inner-section-two ul li a{
+    color: #000;
+    font-size: 20px;
+}
+/* ========================================
+        homestyle page end here
+===========================================*/

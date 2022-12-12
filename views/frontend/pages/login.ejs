@@ -1,0 +1,41 @@
+<%- include('../layouts/header.ejs') %>
+
+
+<%- include('../layouts/navbar.ejs') %>
+
+<div class="auth">
+     <div class="container">
+          <div class="auth_title text-center mt-5">
+               <h3>Login Your Account</h3>
+          </div>
+          <div class="auth_area">
+               <div class="row">
+                    <div class="col-md-8 m-auto mt-3 mb-5">
+                        <div class="card card-body mb-3">
+                              <form action="/auth/login" method="post">
+                                   <div class="form-group mb-3">
+                                        <label for="username">Enter your username</label>
+                                        <input type="text" name="username" placeholder="Username" class="form-control">
+                                   </div>
+                                   
+                                   <div class="form-group mb-3">
+                                        <label for="password">Enter your password</label>
+                                        <input type="password" name="password" placeholder="Password" class="form-control">
+                                   </div>
+                                   
+                                   <div class="form-group mb-3 mt-4 text-center"> 
+                                        <input type="submit" class="btn btn-success form-control" value="Sign In"> 
+                                   </div>
+                              </form>
+                              <center>
+                                   <a href="/auth/signup">Don't have an account? Create One</a>
+                              </center>
+                        </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+ 
+
+<%- include('../layouts/footer.ejs') %>

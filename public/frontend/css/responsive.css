@@ -1,0 +1,750 @@
+
+@media screen and (max-width: 1399px) {
+    .sidebar-post img {
+        max-height: 60px;
+        border-radius: 100%;
+        max-width: 60px;
+    }
+    .sidebar-post-para-section {
+        max-width: 170px;
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    
+    /* ===========sidebar start here============== */
+    .sub-sidebar-two {
+        padding: 18px;
+    }
+
+    .sub-sidebar-subscribe {
+        padding: 30px;
+    }
+
+    .sub-sidebar-subscribe {
+        padding: 25px;
+    }
+    .sidebar-post {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ===========sidebar start here============== */
+}
+
+
+@media screen and (max-width: 991px) {
+
+
+
+    .sidebar-post-para-section {
+        max-width: 500px;
+        margin-left: 30px;
+    }
+
+    .sidebar-post {
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .sidebar-post img {
+        max-height: 89px;
+        border-radius: 100%;
+    }
+
+    .sidebar-post {
+        flex-direction: unset;
+        text-align: unset;
+    }
+
+    /* ===========mobile__header========= */
+   #mobile__header{
+       display: block;
+   }
+
+   #header{
+       display: none;
+   }
+
+   .Header__top__logo a, .mobile__Header__top__logo a{
+       font-size: 35px;
+   }
+
+    /* ===========mobile__header========= */
+
+   /* ===========sidebar start here============== */
+   .sub-sidebar-social ul li a {
+    font-size: 25px;
+    }
+
+    /* ===========sidebar end here============== */
+
+    .fixedHeader__bottom > ul {
+        display: none;
+    }
+
+    .modal-body form input.search {
+        font-size: 35px;
+    }
+
+    .modal-body form input {
+        padding: 230px 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    .fixedHeader__top {
+        margin-bottom: 0;
+    }
+
+    .slide-content {
+        padding: 14px 17px;
+    }
+
+    .slide-content .a2 {
+        font-size: 22px;
+    }
+
+    .slide-content p {
+        font-size: 13px;
+    }
+
+    .slide-content .a3 {
+        font-size: 15px;
+    }
+
+    .sub-sidebar-four {
+        display: none;
+    }
+
+    /* ============Category page start here============ */
+
+    .banner_section {
+        max-height: 600px;
+        margin-bottom: 25px;
+    }
+
+    .category__grid__desc {
+        margin-top: 50px;
+    }
+
+    .category__details {
+        text-align: center;
+    }
+
+    .category__details p{
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .pagination__section__inner ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    /* ============Category page end here============ */
+
+    div#sidebarWrap {
+        margin-top: 50px;
+    }
+
+/* -------------------------------------------------------------------- */
+    
+    /* ===============single post page start here========= */
+    :root{
+        --pPadding: 40px 0;
+    }
+
+    /* .blog-post-wraper-top a {
+        transition: 0.3s;
+        text-decoration: none;
+    } */
+
+    .single__post__section .blog-title a {
+        font-size: 28px;
+    }
+
+    .single__post__section__inner {
+        padding: 30px 50px;
+    }
+    /* =================single post page end here=============== */
+
+/* ------------------------------------------------------------------------ */
+
+    /* =================about page start here==================== */
+    .single__post__comment__section__inner {
+        padding: 0 50px;
+    }
+    /* =================about page start here==================== */
+}
+
+@media screen and (max-width: 767px) {
+
+    .slidebar-aboutme {
+        margin: 20px 0;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .Header__top__logo h1 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 43px;
+    }
+
+    .slide-content {
+        padding: 12px 8px;
+    }
+
+    .slide-content {
+        padding: 12px 8px;
+    }
+
+    .slide-content .a2 {
+        margin: 8px 0;
+    }
+
+    .slide-content p {
+        font-size: 12px;
+    }
+
+    .slide-content .a3 {
+        font-size: 12px;
+    }
+
+    .swiper-button-prev {
+        width: 33px;
+        height: 43px;
+    }
+
+    .swiper-button-next {
+        width: 33px;
+        height: 43px;
+    }
+
+    .blog__post__item .blog-post{
+        padding-bottom: 10px;
+        border-bottom: 1px dashed lightgrey;
+    }
+    
+    .blog__post__item .blog-post:last-child{
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    /* =============single post page start here================= */
+    .single__post__section__inner {
+        padding: 30px 35px;
+    }
+
+    .comments__common.take__margin__left {
+        margin-left: 75px;
+    }
+
+    .comment__content p {
+        padding: 13px 0;
+    }
+    /* =============single post page start here================= */
+
+    /* ==============about me page start here=================== */
+    .about__script {
+        padding: 55px 70px;
+    }
+    /* ==============about me page end here====================== */
+
+    /* ==============error page start here======================= */
+    .error-section {
+        padding: 30px 25px;
+        margin: 70px 0 40px;
+        box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);
+    }
+
+    .error-search form button{
+        margin: 10px 0px 0px;
+        width: 50%;
+    }
+    /* =============error page end here========================== */
+
+
+}
+
+@media screen and (max-width: 575px) {
+    #header {
+        padding: 25px 20px;
+    }
+
+    .slide-content {
+        padding: 12px 0px;
+    }
+
+    .slide-content .a2 {
+        margin: 6px 0;
+    }
+
+    .slide-content p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .blog__post__item {
+        padding: 18px;
+        margin-bottom: 38px;
+        box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);
+    }
+
+    .blog-inspiration {
+        text-align: center;
+        margin: 11px 8px;
+    }
+
+    .blog-inspiration a {
+        font-size: 15px;
+    }
+
+    .blog-paragraph {
+        margin: 20px 0px 20px;
+        font-size: 16px;
+    }
+
+    .blog-post-wraper-bottom a {
+        font-size: 17px;
+    }
+
+    .sub-sidebar-three {
+        margin: 0px 0px 35px 0px;
+    }
+
+    .footer-page-content {
+        margin: 0;
+    }
+
+    .footer-foot {
+        padding: 30px 15px;
+    }
+
+    .mobile__menu {
+        width: 100%;
+    }
+
+
+/* ================ Category list full section start here---page=================*/
+
+    .single__post__section__inner {
+        padding: 25px 25px;
+    }
+
+    .life__style__category__inner h3 {
+        font-size: 26px;
+        padding: 22px;
+    }
+
+        .category__grid__section__inner {
+            padding: 25px;
+            margin: 30px 0;
+            background-color: #fff;
+            box-shadow: 0 0 35px 5px rgb(156 156 156 / 10%);
+        }
+
+/* ===================== Category list full section end here---page==========================*/
+
+/* =============single post page start here================= */
+
+
+:root{
+    --pPadding: 35px 0;
+}
+
+.author__written__content {
+    padding: 15px 0;
+}
+
+.author__written__content p {
+    margin: 15px 0px;;
+}
+
+.comments__common.take__margin__left {
+    margin-left: 50px;
+}
+
+.comment__content p {
+    text-align: justify;
+}
+
+.single__post__section .blog-title a {
+    font-size: 22px;
+}
+/* =============single post page start here================= */
+
+
+/* ==============about me page start here=================== */
+.about__script {
+    padding: 45px 55px;
+}
+
+.about__script .title h3 {
+    padding-bottom: 30px;
+}
+
+.about__script .title p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.blog__three__post__paddingunder {
+    padding-bottom: 40px;
+}
+
+.post__title p {
+    text-align: center;
+}
+
+.single__post__comment__section__inner {
+    padding: 0 35px;
+}
+/* ==============about me page end here=================== */
+
+/* =============error page start here===================== */
+.error-search form input[type="text"] {
+    width: 100% !important;
+}
+
+.error-search form button {
+    width: 100%;
+}
+
+.error-content {
+    width: 100%;
+}
+
+.error-title h1 {
+    font-size: 35px;
+    padding: 30px 0px 10px;
+}
+
+.error-section {
+    margin: 40px 0;
+}
+/* ============error page end here======================== */
+
+}
+
+@media screen and (max-width: 424px ) {
+
+    .sidebar-post-para-section {
+        max-width: 200px;
+        margin-left: 30px;
+    }
+    .Header__top__icon {
+        display: none;
+    }
+
+    .slide-content {
+    top: 50%;
+    left: 24%;
+    transform: translate(-17%, -52%);
+    padding: 30px 20px;
+    }
+
+    .modal-content {
+        padding-left: 0;
+    }
+
+    .modal-body form input {
+        padding: 10px 10px;
+    }
+
+
+
+    .fixedHeader__top {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Header__top__searchbar {
+        margin-left: 100%;
+    }
+
+    .swiper-button{
+        display: none;
+    }
+
+    .slide-content {
+        padding: 15px 0px;
+    }
+
+    .slide-content p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .slide-content .a3 {
+        font-size: 13px;
+    }
+
+    .blog__post__grid {
+        margin-top: 30px;
+    }
+
+    .blog-paragraph {
+        margin: 15px 0;
+    }
+
+    .blog-paragraph p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .display__will__hidden{
+        display: none;
+    }
+
+    /* ================Category section page start here=========== */
+
+    .life__style__category__inner h3 {
+        padding: 20px;
+    }
+
+    .category__grid__desc {
+        margin-top: 35px;
+    }
+
+    .category__details .h4 {
+        font-size: 19px;
+    }
+
+    .category__details a .readmore {
+        font-size: 15px;
+    }
+
+    .category__details p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+    .pagination__section__inner ul li {
+        margin-bottom: 10px;
+    }
+
+    /* ================Category section page end here=========== */
+
+    /* =================Home page start here============= */
+
+    .bottom-section{
+        flex-direction: column;
+    }
+
+    .itemssss {
+        justify-content: center;
+    }
+
+    /* =================Home page end here=========== */
+
+    /* ======================single post page start here========== */
+    .single__post__section__inner {
+        padding: 25px 15px;
+    }
+
+    .single__post__comment__section form label {
+        margin: 10px 0;
+    }
+
+    .single__post__comment__section form a {
+        max-width: 100%;
+    }
+
+   .blog__three__post__paddingunder {
+        padding-bottom: 25px;
+    }
+
+    .single__post__section .blog-title a {
+        font-size: 22px;
+    }
+
+    .single__post__section__inner .para p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .social__sector {
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .author__written__content ul {
+        justify-content: center;
+    }
+
+    .prev__next__post {
+        padding: 10px 0;
+    }
+    /* ======================single post page end here============ */
+
+    /* ======================about me page start here=========== */
+    .about__script {
+        padding: 30px 25px;
+    }
+
+    .about__script .title h3 {
+        padding-bottom: 20px;
+    }
+
+    .single__post__comment__section__inner {
+        padding: 0 15px;
+    }
+
+    .sub-footer-page-content {
+        text-align: center;
+    }
+
+    .footer-page-content {
+        margin: 0;
+        text-align: center;
+    }
+    /* ======================about me page start here=========== */
+
+    .column4 ul{
+        justify-content: space-around;
+    }
+
+    /* ==============error page start here====== */
+    .error-title h1 {
+        font-size: 32px;
+    }
+
+    .error-content {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    /* ============error page end here===========*/
+ 
+}
+
+@media screen and (max-width: 374px) {
+
+    #header {
+        padding: 25px 20px 10px;
+    }
+
+    .blog-info ul li {
+        list-style: none;
+        font-size: 12px;
+        letter-spacing: 0.2px;
+    }
+
+    .slide-content {
+        padding: 5px 0px;
+    }
+
+/* ====================Category section page start here============ */
+    .slide-image {
+        height: 220px;
+    }
+
+    .category__details .h4 {
+        font-size: 18px;
+    }
+
+    .category__details p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .pagination__section {
+        margin: 50px 0;
+    }
+
+    /* .pagination__section__inner ul li a {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    } */
+/* ======================Category section page start here=========== */
+
+/* ==================single post page start here==================== */
+    .prev__post p, .next__post p {
+        margin: 12px 0;
+        padding: 0;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+
+    .col-sm-4.blog__three__post__paddingunder {
+        padding-bottom: 15px;
+    }
+/* =================single post page end here==================== */
+
+/* =================about page start here======================== */
+.about__script .title h3 {
+    font-size: 26px;
+}
+/* ================about page end here=========================== */
+
+/* ================error page start here========================= */
+.error-title h1 {
+    font-size: 24px;
+}
+/* ===============error page end here============================ */
+    
+}
+
+@media screen and (max-width: 319px){
+
+    .slide-image {
+        height: 260px;
+    }
+
+    .slide-content{
+        padding: 10px 5px;
+    }
+
+    .slide-content .a2 {
+        font-size: 20px;
+    }
+
+    .slide-content p {
+        /* display: none; */
+        text-align: justify;
+    }
+
+
+
+/* ======================Category section page start here============ */
+
+    .life__style__category__inner h3 {
+        padding: 15px;
+    }
+
+    .life__style__category__inner h3 {
+        font-size: 23px;
+        padding: 22px;
+    }
+
+    .category__grid__section__inner {
+        padding: 10px;
+        margin: 18px 0;
+    }
+
+    .category__details p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .about__script .title h3 {
+        font-size: 24px;
+    }
+
+    .about__script .title p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+/* ======================Category section page start here============ */
+    
+}

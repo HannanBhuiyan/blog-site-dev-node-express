@@ -1,0 +1,59 @@
+<%- include('../layouts/header.ejs') %>
+
+
+<%- include('../layouts/navbar.ejs') %>
+
+<div class="auth">
+     <div class="container">
+          <div class="auth_title text-center mt-5">
+               <h3>Create a new account</h3>
+          </div>
+          <div class="auth_area">
+               <div class="row">
+                    <div class="col-md-8 m-auto mt-3 mb-5">
+                        <div class="card card-body mb-3">
+                              <form action="/auth/signup" method="post">
+                                   <div class="form-group mb-3">
+                                        <label for="username">Enter your username (unique)</label>
+                                        <input type="text" name="username" placeholder="Username" class="form-control <%= value.username ? 'is-valid' : '' %>  <%= error.username ? 'is-invalid' : '' %>" value="<%= value.username ? value.username : '' %>">
+                                        <div class="invalid-feedback">
+                                             <%= error.username && error.username %>
+                                        </div>
+                                   </div>
+                                   <div class="form-group mb-3">
+                                        <label for="email">Enter your email (unique)</label>
+                                        <input type="text" name="email" placeholder="Email" class="form-control <%= value.email ? 'is-valid' : '' %> <%= error.email ? 'is-invalid' : '' %> "value="<%= value.email ? value.email : '' %>">
+                                        <div class="invalid-feedback">
+                                             <%= error.email && error.email %>
+                                        </div>
+                                   </div>
+                                   <div class="form-group mb-3">
+                                        <label for="password">Enter your password</label>
+                                        <input type="password" name="password" placeholder="Password" class="form-control <%= value.password ? 'is-valid' : '' %> <%= error.password ? 'is-invalid' : '' %>" value="<%= value.password ? value.password : '' %>">
+                                        <div class="invalid-feedback">
+                                             <%= error.password && error.password %>
+                                        </div>
+                                   </div>
+                                   <div class="form-group mb-3">
+                                        <label for="confirm_password">Confirm Password</label>
+                                        <input type="password" name="confirm_password" placeholder="Confirm password" class="form-control <%= error.username ? 'is-valid' : '' %> <%= error.confirm_password ? 'is-invalid' : '' %>" value="<%= value.confirm_password ? value.confirm_password : '' %>">
+                                        <div class="invalid-feedback">
+                                             <%= error.confirm_password && error.confirm_password %>
+                                        </div>
+                                   </div>
+                                   <div class="form-group mb-3 mt-4 text-center"> 
+                                        <input type="submit" class="btn btn-success form-control" value="Sign Up"> 
+                                   </div>
+                              </form>
+                              <center>
+                                   <a href="/auth/login">Already have an account? Login</a>
+                              </center>
+                        </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+ 
+
+<%- include('../layouts/footer.ejs') %>
