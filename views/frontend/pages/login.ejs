@@ -15,12 +15,18 @@
                               <form action="/auth/login" method="post">
                                    <div class="form-group mb-3">
                                         <label for="username">Enter your username</label>
-                                        <input type="text" name="username" placeholder="Username" class="form-control">
+                                        <input type="text" name="username" placeholder="Username" class="form-control <%= value.username ? 'is-valid' : '' %>  <%= error.username ? 'is-invalid' : '' %>" value="<%= value.username ? value.username : '' %>">
+                                        <div class="invalid-feedback">
+                                             <%= error.username && error.username %>
+                                        </div> 
                                    </div>
                                    
                                    <div class="form-group mb-3">
                                         <label for="password">Enter your password</label>
-                                        <input type="password" name="password" placeholder="Password" class="form-control">
+                                        <input type="password" name="password" placeholder="Password" class="form-control  <%= value.password ? 'is-valid' : '' %> <%= error.password ? 'is-invalid' : '' %>" value="<%= value.password ? value.password : '' %>">
+                                        <div class="invalid-feedback">
+                                             <%= error.password && error.password %>
+                                        </div>
                                    </div>
                                    
                                    <div class="form-group mb-3 mt-4 text-center"> 

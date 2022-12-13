@@ -30,8 +30,18 @@
                         </li> 
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="/auth/signup">Sign Up</a></li>
-                        <li><a href="contact.html"> Sign In</a></li>
+                        
+                        <%  if( isLoggedIn ) { %>
+
+                            <li><a href="/auth/logout">Logout</a></li>
+                            
+                         <% } else { %>
+                           
+                            <li><a href="/auth/signup">Sign Up</a></li>
+                            <li><a href="/auth/login"> Sign In</a></li>
+                        <% } %>
+
+                       
                     </ul>
                 </div>
             </div>

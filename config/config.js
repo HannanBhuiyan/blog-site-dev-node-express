@@ -6,6 +6,9 @@ const dev = {
      },
      db: {
           url:process.env.DB_URL 
+     },
+     secret_key: {
+          key: process.env.SESSION_SECRET_KEY
      }
 }
 

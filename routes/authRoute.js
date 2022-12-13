@@ -1,5 +1,8 @@
 const router = require('express').Router()
 const signupValidator = require('../validator/auth/signupValidator') 
+const loginValidator = require('../validator/auth/loginValidator')
+const {isUnAuthenticated} = require('../middleware/authMiddleware')
+
 
 
 const {
@@ -13,11 +16,11 @@ const {
 
  
 
-router.get('/signup', signupGetController)
-router.post('/signup', signupValidator, signupPostController)
+router.get('/signup', isUnAuthenticated, signupGetController)
+router.post('/signup', signupValidator, isUnAuthenticated, signupPostController)
 
-router.get('/login', loginGetController)
-router.post('/login', loginPostController)
+router.get('/login', isUnAuthenticated, loginGetController)
+router.post('/login', loginValidator, isUnAuthenticated, loginPostController)
 
 router.get('/logout', logoutController)
 

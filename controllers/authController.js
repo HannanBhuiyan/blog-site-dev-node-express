@@ -46,31 +46,39 @@ exports.signupPostController = async (req, res) => {
 
 // get login controller
 exports.loginGetController = (req, res) => {
-     res.render('../views/frontend/pages/login.ejs', {title: 'Login'})
+     res.render('../views/frontend/pages/login.ejs', {title: 'Login Your Account', error:{}, value:{}})
 }
 
 // post login controller
 exports.loginPostController = async (req, res) => {
  
      const { username , password } = req.body
+
+     const errors = validationResult(req).formatWith(errorFormatter)
+     if(!errors.isEmpty()){
+          return res.render('../views/frontend/pages/login.ejs',
+          {
+               title: 'Login Your Account', 
+               error: errors.mapped(),
+               value: { username, password }
+          })
+     }
   
 
      try {
-          let user = await User.findOne({ username }) 
-          if(!user){ 
-              return res.status(500).json({message: "Invalid Credential"})
-          }   
+          const user = await User.findOne({username})
+          req.session.isLoggedIn = true
+          req.session.user = user
 
-          let match = await bcrypt.compare(password, user.password)
-          if(!match){
-               return res.json({
-                    message: "Invalid Credential"
-               })
-          }
- 
-          console.log("loged in success")
-            
-
+          req.session.save((error)=> {
+               if(error){
+                   res.status(500).send(error) 
+               }
+               else {
+                    return res.redirect('/dashboard')
+               }
+          })
+           
      } catch (error) {
           res.status(500).send(error.message)
      }
@@ -80,5 +88,9 @@ exports.loginPostController = async (req, res) => {
 
 // logout controller
 exports.logoutController = (req, res) => {
+     req.session.destroy( (error) => {
+          console.log(error)
+     })
      
+     return res.redirect('/')
 }
