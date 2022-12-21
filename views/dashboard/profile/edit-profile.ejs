@@ -1,0 +1,111 @@
+<%- include('../dashboard-layouts/dashboard-header.ejs') %>
+<div class="page-wrapper">
+    <!-- Page Content-->
+    <div class="page-content">
+
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="float-right">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Edit Profile</li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">CRM</h4>
+                    </div>
+                    <!--end page-title-box-->
+                </div>
+                <!--end col-->
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-md-12 m-auto">
+                    <div class="card">
+                        <div class="card-body">
+                         <div class="row">
+                          <div class="col-md-4">
+                              <div class="card p-0 m-0">
+                                <div class="image_section text-center p-2"> 
+                                    <form action="upload/profilePics" method="post" enctype="multipart/form-data">
+                                        <img name="profilepic" width="200px" height="200px" src="<%= user.profilePics %>" alt=""> 
+                                        <input class="form-control my-3" type="file" > 
+                                        <button class="btn btn-danger form-control">Remove Image</button>
+                                    </form> 
+                                </div> 
+                              </div>
+                          </div>
+                          <div class="col-md-8"> 
+                            <form action="">
+                                <div class="form-group">
+                                  <label>Title</label>
+                                  <input type="text" name="title" class="form-control" placeholder="Enter your title">
+                                </div>
+                                <div class="form-group">
+                                  <label>Email</label>
+                                  <input type="text" name="email" value="<%= user.email %>" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                  <label>Bio</label>
+                                  <textarea name="bio" id="" cols="30" rows="4" class="form-control" placeholder="Enter your bio max 400 character"></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Website</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fas fa-globe"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" name="website"  placeholder="Enter your website link">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Linkedin</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fab fa-linkedin"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control"  name="linkedin" placeholder="Enter your linkedin link">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Facebook</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fab fa-facebook"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control"  name="facebook" placeholder="Enter your facebook link">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Github</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fab fa-github-square"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control"  name="github" placeholder="Enter your github link">
+                                  </div>
+                                </div> 
+                                <input type="submit" value="Create Profile" class="btn btn-success"> 
+                            </form>
+                          </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- container -->
+
+        <footer class="footer text-center text-sm-left">
+            &copy; 2020 Crovex <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i
+                    class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!-- end page content -->
+</div>
+<!-- end page-wrapper -->
+
+<%- include('../dashboard-layouts/dashboard-footer.ejs') %>

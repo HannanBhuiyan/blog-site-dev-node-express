@@ -1,13 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-</head>
-<body>
-     <h2>this is dashboard</h2>
-     <a href="/auth/logout">Logout</a>
-</body>
-</html>
+
+<%- include('./dashboard-layouts/dashboard-header.ejs') %>
+  <div class="page-wrapper">
+      <!-- Page Content-->
+      <div class="page-content">
+
+          <div class="container-fluid">
+              <!-- Page-Title -->
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="page-title-box">
+                          <div class="float-right">
+                              <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="javascript:void(0);">Crovex</a></li>
+                                  <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
+                                  <li class="breadcrumb-item active">CRM</li>
+                              </ol>
+                          </div>
+                          <h4 class="page-title">CRM</h4>
+                      </div><!--end page-title-box-->
+                  </div><!--end col-->
+              </div>
+              <!-- end page title end breadcrumb -->
+            <div class="row">
+              <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>total user</h2>
+                </div>
+              </div>
+              </div>
+            </div>
+
+          </div><!-- container -->
+
+          <footer class="footer text-center text-sm-left">
+              &copy; 2020 Crovex <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+          </footer><!--end footer-->
+      </div>
+      <!-- end page content -->
+  </div>
+  <!-- end page-wrapper -->
+        
+<%- include('./dashboard-layouts/dashboard-footer.ejs') %>
+
+     

@@ -1,71 +1,56 @@
 const express = require('express')
 const app = express()
 const config = require('./config/config')
-const session = require('express-session')
-const MongoStore = require('connect-mongo');
-const {isUnAuthenticated} = require('./middleware/authMiddleware')
+const chalk = require('chalk')
 const port = config.app.port
-const cors = require('cors')
 require('./config/db')
-const morgan = require('morgan')
-
-
-// import route
-const authRoute = require('./routes/authRoute')
-const dashboardRoutes = require('./routes/dashboardRoute')
-
-
-// import middleware
-const { bindUserWithRequest } = require('./middleware/authMiddleware')
-const setLocal = require('./middleware/setLocalsMiddleware')
-
+const setMiddleware = require('./middleware/middleware')
+const setRoute = require('./routes/routes')
 
 // setup view engine
 app.set('view engine', 'ejs')
 app.set('views', 'views')
  
+
+// using middleware from middleware dir
+setMiddleware(app)
+
+
+// using route from routes dir
+setRoute(app)
+
+
+// error route
+
+// app.use((req, res, next) => {
+//      let error = new Error("404 page not found")
+//      error.status = 400
+//      next(error)
+// })
+
+// app.use((error, req, res, next) => {
+//      if(error.status === 400) {
+//           console.log(chalk.red.inverse(error.message))
+//           res.render('./frontend/pages/404.ejs',
+//           {
+//                title: '404 page',
+//                flashMessage: {}
+//           })
+//      }
+//      else {
+//           console.log(chalk.red.inverse(error.message))
+//           res.render('./frontend/pages/500.ejs',
+//           {
+//                title: 'Internal Server Error',
+//                flashMessage: {}
+//           })
+//      }
+     
+// })
  
-// setup middleware array
-const middleware =  [
-     express.static('public'),
-     morgan('dev'),
-     express.urlencoded({ extended: true }),
-     express.json(),
-     cors(),
-     session({
-          secret: config.secret_key.key || "SECRET_KEY",
-          resave: false,
-          saveUninitialized: false,
-          store: MongoStore.create({
-               mongoUrl: config.db.url,
-               collectionName: 'session',
-               autoRemoveInterval: 2
-          })
-     }),
-     bindUserWithRequest(),
-     setLocal()
-]
-
-app.use(middleware)
-
-
-// use custom route
-
-app.use("/auth", authRoute)
-app.use("/dashboard" , dashboardRoutes)
-
- 
-app.get('/', isUnAuthenticated, (req, res) => {
-     res.render('./frontend/pages/index.ejs', {title: 'Home'})
-})
-
-// router not found
-app.get('*', (req, res) => {
-     res.send("Router not found")
-})
-
 
 // run server
 app.listen(port, () => {
-     console.log(`server run on ${port} port`)
+     console.log(chalk.green(`server run on ${port} port`))
 })
+

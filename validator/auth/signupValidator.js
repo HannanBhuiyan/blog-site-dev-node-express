@@ -1,4 +1,4 @@
-const {body} = require('express-validator')
+const { body } = require('express-validator')
 const User = require('../../models/UserModel')
 
 module.exports = [

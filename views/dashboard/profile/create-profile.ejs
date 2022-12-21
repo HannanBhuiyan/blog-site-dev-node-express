@@ -1,0 +1,170 @@
+<%- include('../dashboard-layouts/dashboard-header.ejs') %>
+
+<div class="page-wrapper">
+    <!-- Page Content-->
+    <div class="page-content">
+
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="float-right">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Profile</li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">CRM</h4>
+                    </div>
+                    <!--end page-title-box-->
+                </div>
+                <!--end col-->
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-md-12 m-auto">
+                    <div class="card">
+                        <div class="card-body">
+                         <div class="row">
+                          <div class="col-md-4">
+                              <div class="card p-0 m-0">
+                                <div class="image_section text-center p-2"> 
+                                  
+                                    <form action="/upload/profilePicture" method="post" enctype="multipart/form-data" id="profilePicForm"> 
+                                      
+                                        <img id="profilePics" width="200px" height="200px" src="<%= user.profilePics %>" >
+ 
+                                        <input class="form-control my-3" id="profilePicsFile" type="file" name="profilePics" accept="image/*" > 
+                                        <!-- <button type="submit">upload</button> -->
+                              
+                                    </form> 
+                                    <button id="removeProfilePics" class="btn btn-danger form-control" style="display:<%= user.profilePics.includes('default.png') ? 'none' : 'block' %>">Remove Image</button>
+                                </div> 
+                              </div>
+                          </div>
+                          <div class="col-md-8"> 
+                            <form action="/profile/create-profile" method="post">
+                                <div class="form-group">
+                                  <label>Title</label>
+                                  <input 
+                                  type="text" 
+                                  name="title" 
+                                  value="<%= old_value.title ? old_value.title : value.title %>" class="form-control <%= error.title ? 'is-invalid' : '' %>" placeholder="Enter your title">
+                                <div class="invalid-feedback">
+                                  <%= error.title && error.title %>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                  <label>Email</label>
+                                  <input type="text" name="email" value="<%= user.email %>" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                  <label>Bio</label>
+                                  <textarea name="bio" id="" cols="30" rows="4" class="form-control <%= error.bio ? 'is-invalid' : '' %>" placeholder="Enter your bio max 400 character"><%= old_value.bio ? old_value.bio : value.bio %></textarea>
+                                  <div class="invalid-feedback">
+                                    <%= error.bio && error.bio %>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Website</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fas fa-globe"></i></div>
+                                    </div>
+                                    <input 
+                                    type="text" 
+                                    class="form-control <%= error.website ? 'is-invalid' : '' %>" value="<%= old_value.links.website ? old_value.links.website : value.website %>" 
+                                    name="website"  
+                                    placeholder="Website Link (optional)">
+                                    <div class="invalid-feedback">
+                                      <%= error.website && error.website %>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Linkedin</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fab fa-linkedin"></i></div>
+                                    </div>
+                                    <input 
+                                    type="text" 
+                                    class="form-control <%= error.linkedin ? 'is-invalid' : '' %> " value="<%= old_value.links.linkedin ? old_value.links.linkedin : value.linkedin %>" name="linkedin" placeholder="Linkedin Link (optional)">
+                                    <div class="invalid-feedback">
+                                      <%= error.linkedin && error.linkedin %>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Facebook</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fab fa-facebook"></i></div>
+                                    </div>
+                                    <input 
+                                    type="text" 
+                                    class="form-control <%= error.facebook ? 'is-invalid' : '' %> " value="<%= old_value.links.facebook ? old_value.links.facebook : value.facebook %>"  
+                                    name="facebook" 
+                                    placeholder="Facebook Link (optional)">
+                                    <div class="invalid-feedback">
+                                      <%= error.facebook && error.facebook %>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only">Github</label>
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fab fa-github-square"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control <%= error.github ? 'is-invalid' : '' %> " value="<%= old_value.links.github ? old_value.links.github : value.github  %>"  name="github" placeholder="Github Link (optional)">
+                                    <div class="invalid-feedback">
+                                      <%= error.github && error.github %>
+                                    </div>
+                                  </div>
+                                </div> 
+                                <input type="submit" value="Create Profile" class="btn btn-success"> 
+                            </form>
+                          </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="crop-modal"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Upload Photo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div id="cropped-image"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" id="cancel-cropping" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" id="upload-image" class="btn btn-primary">Upload</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div><!-- container -->
+
+        <footer class="footer text-center text-sm-left">
+            &copy; 2020 Crovex <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i
+                    class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!-- end page content -->
+</div>
+<!-- end page-wrapper -->
+
+<%- include('../dashboard-layouts/dashboard-footer.ejs') %>

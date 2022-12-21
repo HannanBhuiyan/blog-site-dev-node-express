@@ -9,11 +9,13 @@ const profileSchema = new Schema({
      title: {
           type: String,
           trim: true,
-          maxLength: 100,
+          required: true,
+          maxLength: 50,
      },
      bio: {
           type: String,
           trim: true,
+          required: true,
           maxLength: 400
      },
      links: {
@@ -22,7 +24,6 @@ const profileSchema = new Schema({
           github: String,
           linkedin: String
      },
-     profilepic: String,
      posts: [
           {
                type: Schema.Types.ObjectId,
