@@ -3,6 +3,7 @@ const dashboardRoute = require('./dashboardRoute')
 const homeRoute = require('./homeRoute')
 const profileRoute = require('./profileRoute')
 const uploadRoute = require('./uploadRoute') 
+const categoryRoute = require('./categoryRoute')
 
 const routes = [
      {
@@ -16,6 +17,10 @@ const routes = [
      {
           path: '/profile',
           handler: profileRoute
+     },
+     {
+          path: '/category',
+          handler: categoryRoute
      },
      {
           path:'/upload',

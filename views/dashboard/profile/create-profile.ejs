@@ -36,8 +36,7 @@
                                         <img id="profilePics" width="200px" height="200px" src="<%= user.profilePics %>" >
  
                                         <input class="form-control my-3" id="profilePicsFile" type="file" name="profilePics" accept="image/*" > 
-                                        <!-- <button type="submit">upload</button> -->
-                              
+                                        <!-- <button type="submit">upload</button> --> 
                                     </form> 
                                     <button id="removeProfilePics" class="btn btn-danger form-control" style="display:<%= user.profilePics.includes('default.png') ? 'none' : 'block' %>">Remove Image</button>
                                 </div> 
@@ -50,7 +49,8 @@
                                   <input 
                                   type="text" 
                                   name="title" 
-                                  value="<%= old_value.title ? old_value.title : value.title %>" class="form-control <%= error.title ? 'is-invalid' : '' %>" placeholder="Enter your title">
+                                  value="<%= countprofile >= 1 ? old_value.title : '' %>" class="form-control <%= error.title ? 'is-invalid' : '' %>" placeholder="Enter your title">
+   
                                 <div class="invalid-feedback">
                                   <%= error.title && error.title %>
                                 </div>
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="form-group">
                                   <label>Bio</label>
-                                  <textarea name="bio" id="" cols="30" rows="4" class="form-control <%= error.bio ? 'is-invalid' : '' %>" placeholder="Enter your bio max 400 character"><%= old_value.bio ? old_value.bio : value.bio %></textarea>
+                                  <textarea name="bio" id="" cols="30" rows="4" class="form-control <%= error.bio ? 'is-invalid' : '' %>" placeholder="Enter your bio max 400 character"><%=  countprofile >= 1 ? old_value.bio : '' %></textarea>
                                   <div class="invalid-feedback">
                                     <%= error.bio && error.bio %>
                                   </div>
@@ -74,7 +74,7 @@
                                     </div>
                                     <input 
                                     type="text" 
-                                    class="form-control <%= error.website ? 'is-invalid' : '' %>" value="<%= old_value.links.website ? old_value.links.website : value.website %>" 
+                                    class="form-control <%= error.website ? 'is-invalid' : '' %>" value="<%= countprofile >= 1 ? old_value.links.website : '' %>"  
                                     name="website"  
                                     placeholder="Website Link (optional)">
                                     <div class="invalid-feedback">
@@ -90,7 +90,7 @@
                                     </div>
                                     <input 
                                     type="text" 
-                                    class="form-control <%= error.linkedin ? 'is-invalid' : '' %> " value="<%= old_value.links.linkedin ? old_value.links.linkedin : value.linkedin %>" name="linkedin" placeholder="Linkedin Link (optional)">
+                                    class="form-control <%= error.linkedin ? 'is-invalid' : '' %> " value="<%= countprofile >= 1 ? old_value.links.linkedin : ''  %>" name="linkedin" placeholder="Linkedin Link (optional)">
                                     <div class="invalid-feedback">
                                       <%= error.linkedin && error.linkedin %>
                                     </div>
@@ -104,7 +104,7 @@
                                     </div>
                                     <input 
                                     type="text" 
-                                    class="form-control <%= error.facebook ? 'is-invalid' : '' %> " value="<%= old_value.links.facebook ? old_value.links.facebook : value.facebook %>"  
+                                    class="form-control <%= error.facebook ? 'is-invalid' : '' %> " value="<%= countprofile >= 1 ? old_value.links.facebook : '' %>"  
                                     name="facebook" 
                                     placeholder="Facebook Link (optional)">
                                     <div class="invalid-feedback">
@@ -118,13 +118,17 @@
                                     <div class="input-group-prepend">
                                       <div class="input-group-text"><i class="fab fa-github-square"></i></div>
                                     </div>
-                                    <input type="text" class="form-control <%= error.github ? 'is-invalid' : '' %> " value="<%= old_value.links.github ? old_value.links.github : value.github  %>"  name="github" placeholder="Github Link (optional)">
+                                    <input type="text" class="form-control <%= error.github ? 'is-invalid' : '' %> " value="<%= countprofile >= 1 ? old_value.links.github : '' %>"  name="github" placeholder="Github Link (optional)">
                                     <div class="invalid-feedback">
                                       <%= error.github && error.github %>
                                     </div>
                                   </div>
                                 </div> 
-                                <input type="submit" value="Create Profile" class="btn btn-success"> 
+                                <% if (countprofile >= 1) { %>
+                                  <a href="/profile/edit-profile" class="text-success">Edit Profile</a>
+                                <% } else { %>
+                                    <input type="submit" value="Create Profile" class="btn btn-success">
+                                <% } %> 
                             </form>
                           </div>
                          </div>

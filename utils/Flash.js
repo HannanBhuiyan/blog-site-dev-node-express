@@ -1,4 +1,5 @@
 class Flash {
+     
      constructor(req){
           this.req = req
           this.success = this.extractFlashMessage('success')

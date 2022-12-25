@@ -1,20 +1,21 @@
 const express = require('express')
-const morgan = require('morgan')
-var flash = require('connect-flash');
+const flash = require('connect-flash');
+var cookieParser = require('cookie-parser')
 const cors = require('cors')
 const session = require('express-session')
-const MongoStore = require('connect-mongo');
+const toastr = require('express-toastr')
+const MongoStore = require('connect-mongo')
 const config = require('../config/config')
 
 const { bindUserWithRequest } = require('./authMiddleware')
 const setLocal = require('./setLocalsMiddleware')
-
 
 const middleware =  [
      express.static('public'),
      express.urlencoded({ extended: true }),
      express.json(),
      cors(),
+     cookieParser('SECRET_KEY'),
      session({
           secret: config.secret_key.key || "SECRET_KEY",
           resave: false,
@@ -24,8 +25,9 @@ const middleware =  [
                collectionName: 'session',
                autoRemoveInterval: 2
           })
-     }),
+     }), 
      flash(),
+     toastr(),
      bindUserWithRequest(),
      setLocal()
 ]
